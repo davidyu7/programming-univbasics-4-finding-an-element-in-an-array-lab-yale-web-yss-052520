@@ -4,5 +4,6 @@ def find_element_index(array, value_to_find)
     break if i == value_to_find
     count++
   end
-  count
+  return count if count > 0
+  return nil
 end
